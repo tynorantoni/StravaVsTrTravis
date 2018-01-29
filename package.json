@@ -19,7 +19,7 @@
     "lint": "node tools/lint.js",
     "lint:watch": "node tools/lint.js --watch",
     "prestart": "npm run build",
-    "start": "pm2 start ecosystem.json",
+    "start": "node server/server.bundle.js",
     "restart": "npm stop && npm start",
     "stop": "pm2 delete ecosystem.json",
     "test": "npm run unit && npm run e2e",
